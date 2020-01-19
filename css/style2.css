@@ -1,0 +1,376 @@
+html{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.clr::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.first,
+nav,
+.third{
+    margin-bottom: 40px;
+}
+.h1{
+    font-size: 24px;
+    color: #bfbfbf;
+    font-family: "Arial";
+    font-weight: bold;
+    /*font: bold 24px Arial, sans-serif;*/
+}
+.first a{
+    color: white;
+    text-decoration: none;
+}
+.first ul{
+    background-color: #2a3644;
+    border-radius: 6px;
+    box-sizing: content-box;
+}
+.first li{
+    list-style: none;
+}
+.menu{
+    padding: 0;
+    text-align: justify;
+    font-size: 0;
+}
+.menu>li{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    border-right: 1px solid #3f4852;
+    border-left: 1px solid #3f4852;
+}
+.menu a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.submenu li{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #3f4852;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    padding-top: 5px;
+    top: 100%;
+    z-index: 1;
+}
+.submenu ul{
+    padding: 0;
+    width: 210px;
+    list-style: none;
+    background-color: lightgray;
+}
+.submenu li:last-child{
+    border-bottom: none;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.menu>li:first-child:hover>a{
+    border-radius: 6px 0 0 6px;
+}
+.menu>li:last-child:hover>a{
+    border-radius: 0 6px 6px 0;
+}
+.submenu li:first-child:hover>a{
+    border-radius: 6px 6px 0 0;
+}
+.submenu li:last-child:hover>a{
+    border-radius: 0 0 6px 6px;
+}
+.menu>li:hover>a{
+    color: #fd8612;
+    background-color: #3f4852;
+}
+.menu li:first-child{
+    border-left: none;
+}
+.menu li:last-child{
+    border-right: none;
+}
+.submenu li:hover a{
+    background-color: #2a3644;
+    color: #fd8612;
+}
+.submenu li a{
+    color: black;
+}
+nav{
+    display: table;
+    width: 100%;
+    background-color: #2a3644;
+    border-radius: 6px 6px;
+}
+nav ul{
+    display: table-row;
+    list-style: none;
+}
+nav li{
+    display: table-cell;
+    text-align: center;
+}
+nav li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.sub{
+    position: absolute;
+    display: none;
+    top: 100%;
+    padding: 5px 0;
+    width: 210px;
+    list-style: none;
+    z-index: 1;
+}
+.subs{
+    position: absolute;
+    display: none;
+    left: 100%;
+    padding-left: 5px;
+    top: 0;
+    width: 210px;
+    list-style: none;
+    z-index: 1;
+}
+.subes{
+    position: absolute;
+    display: none;
+    right: 100%;
+    padding-right: 5px;
+    top: 0;
+    width: 210px;
+    list-style: none;
+    z-index: 1;
+}
+.sub li,
+.subs li,
+.subes li{
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #3f4852;
+}
+.menus>li{
+    position: relative;
+    font-size: 14px;
+    border-right: 1px solid #3f4852;
+    border-left: 1px solid #3f4852;
+}
+.sub li{
+    position: relative;
+    transition: all 0.2s ease;
+}
+.sub>li:first-child{
+    border-left: none;
+}
+.sub li:last-child{
+    border-bottom: none;
+}
+.sub ul,
+.subs ul,
+.subes ul{
+    padding: 0px;
+    width: 210px;
+    list-style: none;
+    display: block;
+}
+.menus li:hover .sub{
+    display: block;
+}
+nav li:first-child{
+    border-left: none;
+}
+nav li:last-child{
+    border-right: none;
+}
+nav li:first-child:hover>a{
+    border-radius: 6px 0 0 6px;
+}
+nav li:last-child:hover>a{
+    border-radius: 0 6px 6px 0;
+}
+.sub li:hover .subs{
+    display: block;
+}
+.subs li:hover .subes{
+    display: block;
+}
+.sub ul:first-child{
+    border-radius: 6px 6px;
+}
+.sub ul:last-child{
+    border-radius: 6px 6px;
+}
+.sub li:hover>a{
+    color: #fd8612;
+    background-color: #2a3644;
+}
+.sub li:hover>a{
+    color: #fd8612;
+    background-color: #2a3644;
+}
+.sub li:hover:first-child>a{
+    border-radius: 6px 6px 0 0;
+}
+.sub li:hover:last-child>a{
+    border-radius: 0 0 6px 6px;
+}
+.subes li{
+    position: relative;
+    transition: all 0.2s ease;
+}
+.menus::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.menus>li:hover>a{
+    color: #fd8612;
+    background-color: #3f4852;
+}
+.sub ul,
+.subs ul,
+.subes ul{
+    background-color: lightgray;
+}
+.sub li a,
+.subs li a,
+.subes li a{
+    color: black;
+}
+.third{
+    background-color: #2a3644;
+    font-size: 14px;
+    display: block;
+    text-align: justify;
+    border-radius: 6px;
+}
+.third a{
+    color: white;
+    text-decoration: none;
+}
+.third ul{
+    border-radius: 6px;
+    box-sizing: content-box;
+}
+.third a{
+    display: block;
+    text-decoration: none;
+}
+.third li{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+.about>li{
+    border-right: 1px solid #3f4852;
+    border-left: 1px solid #3f4852;
+    margin-right: 30px;
+}
+.about li,
+.social li{
+    display: inline-block;
+    font-size: 14px;
+}
+.social li{
+    margin-left: 20px;
+}
+.about{
+    float:left;
+}
+.social{
+    float:right;
+}
+.third li:hover .submenu{
+    display: block;
+}
+.third li:first-child{
+    border-left: none;
+}
+.third li:last-child{
+    border-right: none;
+}
+.third li:first-child:hover>a{
+    border-radius: 6px 6px 0 0;
+}
+.third li:last-child:hover>a{
+    border-radius:  0 0 6px 6px;
+}
+.third>li:hover>a{
+    color: #fd8612;
+    background-color: #3f4852;
+}
+.about,
+.social{
+    margin: 0;
+    padding: 0;
+}
+.double{
+    width: 420px;
+}
+.double li{
+    display: block;
+}
+.double-bg ul{
+    border-radius: 6px;
+}
+.double ul{
+    width: 210px;
+}
+.about li a{
+    padding: 12px;
+}
+.submenu li{
+    display: block;
+}
+.left{
+    float: left;
+}
+.double-bg{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.left{
+    border: 6px;
+}
+.double-bg ul:first-child li{
+    border-right: 1px solid #3f4852;
+}
+.double-bg{
+    overflow: hidden;
+    border-radius: 6px;
+}
+.double-bg ul:first-child{
+    border-radius: 0;
+}
+.double-bg li:first-child:hover>a{
+    border-radius: 0;
+}
+.double-bg ul:last-child{
+    border-radius: 0;
+}
+.double-bg li:last-child:hover>a{
+    border-radius: 0;
+}
